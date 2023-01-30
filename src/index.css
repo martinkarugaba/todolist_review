@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.todo__wrapper {
+  width: 40%;
+  height: auto;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border: 0.5px solid #ccc;
+  box-shadow: 0 0 5px 0 #242222bf;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+}
+
+header .refresh-icon {
+  cursor: pointer;
+}
+
+header p {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+form input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+}
+
+form .submit__button {
+  padding: 0.8rem 1rem;
+}
+
+.remove {
+  cursor: pointer;
+}
+
+.todoList__wrapper {
+  width: 100%;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1rem;
+  align-items: center;
+  width: 100%;
+  border-bottom: 0.5px solid #ccc;
+  padding: 0.8rem 1rem;
+}
+
+.todo p {
+  flex: 1;
+}
+
+.todo .description {
+  justify-self: flex-start;
+}
+
+.dots {
+  cursor: pointer;
+  height: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dots:hover div {
+  background-color: #212121;
+}
+
+.dot {
+  height: 3px;
+  width: 3px;
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+.clear__all__btn {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.edit__section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(33, 33, 33, 0.5);
+  display: none;
+  place-items: center;
+}
+
+.show_edit_section {
+  display: grid;
+}
+
+.edit__section .wrapper {
+  background-color: rgb(250, 250, 250);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  overflow: hidden;
+  width: 500px;
+  height: 300px;
+  padding: 2rem;
+}
+
+.edit__section h3 {
+  font-size: 1.5rem;
+}
+
+.edit__form {
+  background-color: #fafafa;
+  height: auto;
+  width: auto;
+}
+
+.edit__input {
+  width: 300px;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.edit__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin-top: 1rem;
+}
+
+.edit__buttons button {
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  color: #fafafa;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.save__edit {
+  margin-left: 1rem;
+  padding: 0.8rem 1rem;
+  background: #64dd17;
+}
+
+.discard__edit {
+  background: #e65100;
+}
+
+.edit__todo {
+  cursor: pointer;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
