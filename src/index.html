@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Todo List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="todo__wrapper">
+      <header>
+        <p>Todays To do</p>
+        <i class="fa-solid fa-arrows-rotate refresh-icon"></i>
+      </header>
+      <form class="form">
+        <input
+          class="input"
+          type="text"
+          placeholder="Add to your list"
+        />
+        <button class="submit__button" type="submit">Add Todo</button>
+      </form>
+      <div class="todoList__wrapper"></div>
+
+      <!-- edit section -->
+      <section class="edit__section">
+        <div class="wrapper">
+          <h3>Edit todo</h3>
+          <form class="edit__form">
+            <input class="edit__input" type="text" />
+          </form>
+          <div class="edit__buttons">
+            <button class="discard__edit">Discard</button>
+            <button class="save__edit">Save Changes</button>
+          </div>
+        </div>
+      </section>
+
+      <button class="clear__all__btn">Clear all completed</button>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/f6935772b1.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
